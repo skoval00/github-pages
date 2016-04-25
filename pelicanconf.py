@@ -7,6 +7,8 @@ SITENAME = u'SkoGround'
 SITEURL = 'https://skoval00.github.io/'
 
 PATH = 'content'
+# Files in these directories are copied to the output directory
+STATIC_PATHS = ['images']
 
 TIMEZONE = 'Europe/Moscow'
 
