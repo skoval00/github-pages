@@ -1,4 +1,4 @@
-Title: Explore /proc filesystem
+Title: /proc filesystem
 Date: 2016-11-30 11:26
 
 Q: How to check Kernel command line parameters/options?
