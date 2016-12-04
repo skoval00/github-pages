@@ -2,7 +2,7 @@ Title: Linux processes
 Date: 2016-12-01 19:23
 
 ## Possible process states
-- D    uninterruptible sleep (usually IO)
+- D    uninterruptible sleep (usually waiting for disk IO)
 - R    running or runnable (on run queue)
 - S    interruptible sleep (waiting for an event to complete)
 - T    stopped by job control signal
@@ -10,3 +10,4 @@ Date: 2016-12-01 19:23
 - W    paging (not valid since the 2.6.xx kernel)
 - X    dead (should never be seen)
 - Z    defunct ("zombie") process, terminated but not reaped by its parent
+Processes in R, D commit to load average figures
