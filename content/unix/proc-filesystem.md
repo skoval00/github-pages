@@ -3,83 +3,89 @@ Date: 2016-11-30 11:26
 
 ## System related
 
-`cat /proc/cmdline`
+`/proc/cmdline`
 kernel command line parameters/options
 
-`cat /proc/cpuinfo`
+`/proc/cpuinfo`
 CPU info
 
-`cat /proc/devices`
+`/proc/devices`
 list of major numbers and device groups
 
-`cat /proc/diskstats`
+`/proc/diskstats`
 disk I/O statistics for each disk device
 see the Linux kernel source file Documentation/iostats.txt for more information
 
-`cat /proc/filesystems`
+`/proc/filesystems`
 list of filesystems supported by kernel
 
-`cat /proc/interrupts`
+`/proc/interrupts`
 number of interrupts per CPU per IO device
 
-`cat /proc/loadavg`
+`/proc/loadavg`
 load average figures, runnable and total processes and threads, last created PID
 
-`cat /proc/locks`
+`/proc/locks`
 current file locks and leases
 
-`cat /proc/meminfo`
+`/proc/meminfo`
 memory usage statistics
 
-`ls /proc/mounts`
+`/proc/mounts`
 symlink to /proc/self/mounts
 
-`cat /proc/net`
+`/proc/net`
 see netstat(8)
 
-`cat /proc/partitions`
+`/proc/partitions`
 major and minor numbers of each partition
 
-`cat /proc/stat`
+`/proc/stat`
 kernel/system statistics
 
-`cat /proc/uptime`
+`/proc/uptime`
 uptime and idle time
 
 
 ## Process related
 
-`strings /proc/{PID}/environ`
+`/proc/{PID}/cwd`
+symlink to the current working directory of the process
+
+`/proc/{PID}/environ`
 process environment
 
-`ls /proc/{PID}/fd`
-open file descriptors
+`/proc/{PID}/exe
+symlink to the actual pathname of the executed command
 
-`ls /proc/{PID}/fdinfo`
+`/proc/{PID}/fd`
+symlinks to open file descriptors
+
+`/proc/{PID}/fdinfo`
 iformation about opened files
 
-`cat /proc/{PID}/io`
+`/proc/{PID}/io`
 I/O statistics
 
-`cat /proc/{PID}/limits`
+`/proc/{PID}/limits`
 resource limits
 
-`cat /proc/{PID}/maps`
+`/proc/{PID}/maps`
 currently mapped memory regions and their access permissions
-`cat /proc/{PID}/maps`
+`/proc/{PID}/maps`
 memory consumption
 
 `/proc/{PID}/mem`
 access to memory pages through open(2), read(2) and lseek(2)
 
-`cat /proc/{PID}/mounts`
+`/proc/{PID}/mounts`
 list of all the filesystems currently mounted in the mount namespace
 
-`ls /proc/{PID}/root`
+`/proc/{PID}/root`
 symbolic link that points to the root directory
 
-`cat /proc/{PID}/status`
+`/proc/{PID}/status`
 human readable process information
 
-`ls /proc/{PID}/task`
+`/proc/{PID}/task`
 directory contains one subdirectory for each thread
