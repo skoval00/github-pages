@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'skoval00'
 SITENAME = u'SkoGround'
-SITEURL = 'https://skoval00.github.io/'
+SITEURL = 'https://skoval00.github.io'
 
 PATH = 'content'
 # Files in these directories are copied to the output directory
