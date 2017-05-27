@@ -8,7 +8,13 @@ SITEURL = 'https://skoval00.github.io/'
 
 PATH = 'content'
 # Files in these directories are copied to the output directory
-STATIC_PATHS = ['images']
+STATIC_PATHS = [
+    'images',
+    'extra/favicon.ico',
+]
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'}
+}
 
 TIMEZONE = 'Europe/Moscow'
 
